@@ -9,11 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
 
-    // Елементи DOM
     const searchInput = document.getElementById('searchInput');
     const districtsContainer = document.getElementById('districtsContainer');
 
-    // Відображення районів
+
     function renderDistricts(districts) {
         districtsContainer.innerHTML = '';
         
@@ -40,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Пошук районів
+    // search
     function searchDistricts(searchTerm) {
         const filtered = districtsData.filter(district => 
             district.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -85,7 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Ініціалізація - показуємо всі райони при завантаженні
     renderDistricts(districtsData);
 });
 
@@ -158,7 +156,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // thx
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
