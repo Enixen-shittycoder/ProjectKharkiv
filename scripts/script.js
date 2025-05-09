@@ -138,18 +138,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector('.close-modal');
     const form = document.querySelector('.idea-form');
 
-    // Open
+    
     openBtn.addEventListener('click', function() {
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
     });
 
-    // Close
+    
     closeBtn.addEventListener('click', function() {
         closeModal();
     });
 
-    // Close2
+    
     modal.addEventListener('click', function(e) {
         if (e.target === modal) {
             closeModal();
